@@ -42,7 +42,7 @@ if file_uploader is not None:
         df = pd.read_csv(file_uploader)
     elif file_uploader.type == "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":
         df = pd.read_excel(file_uploader)
-    elif file_uploader.type == " application/octet-stream":
+    elif file_uploader.type == "application/octet-stream":
         df = pd.read_csv(file_uploader, sep='\t')
     elif file_uploader.name.endswith('.xlsx'):  
         df = pd.read_excel(file_uploader)
