@@ -13,7 +13,6 @@ import time
 import numpy as np
 import seaborn as sns
 from plotly import graph_objects as go
-from pandas import DataFrame as df
 
 warnings.filterwarnings('ignore')
 
