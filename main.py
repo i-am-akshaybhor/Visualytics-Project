@@ -34,7 +34,7 @@ library = "seaborn"
 lida = Manager(text_gen = llm("openai"))
 textgen_config = TextGenerationConfig(n=1, temperature=0.5, model="gpt-4o-mini", use_cache=True)
 menu = st.sidebar.selectbox("Menu", ["Dashboard","Analytics", "Code", "Graph","Custom"])
-file_uploader = st.file_uploader(":file_folder: Upload Your File", type=(["csv","xlsx","xls"]) )
+file_uploader = st.file_uploader(":file_folder: Upload Your File", type=(["csv","xlsx","xls","tsv"]) )
 
 if file_uploader is not None:
     st.write("file_uploader.type",file_uploader.type) 
